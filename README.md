@@ -137,7 +137,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 - [x] Add environment variable support
 - [ ] Add Docker support
 - [ ] Add Kubernetes support
-- [ ] Add tests and CI/CD support
+-[ ] Add tests and CI/CD support
 
 
 See the [open issues](https://github.com/seanmishra/project-etherite/issues) for a full list of proposed features (and known issues).
@@ -191,6 +191,17 @@ Project Link: [https://github.com/seanmishra/project-etherite](https://github.co
 - [Choose an Open Source License](https://choosealicense.com)
 - [GitHub Pages](https://pages.github.com)
 - [Font Awesome](https://fontawesome.com)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- DONATE -->
+## Donate
+
+If you find this project useful, please consider donating to support it as well as other projects that I build and maintain. Thanks!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/P5P0TRF3T)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
