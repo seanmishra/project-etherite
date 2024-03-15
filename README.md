@@ -132,12 +132,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_ --
 <!-- ROADMAP -->
 ## Roadmap
 
--[x] Add OAuth 2.0 support
--[x] Add user authentication and endpoint scope validation middlewares
--[x] Add environment variable support
--[ ] Add Docker support
--[ ] Add Kubernetes support
--[ ] Add tests and CI/CD support
+- [x] Add OAuth 2.0 support
+- [x] Add user authentication and endpoint scope validation middlewares
+- [x] Add environment variable support
+- [ ] Add Docker support
+- [ ] Add Kubernetes support
+- [ ] Add tests and CI/CD support
 
 
 See the [open issues](https://github.com/seanmishra/project-etherite/issues) for a full list of proposed features (and known issues).
