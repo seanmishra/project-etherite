@@ -22,7 +22,7 @@
   <p align="center">
     An awesome template to bootstrap your Node.js & MongoDB based RESTful web service project!
     <br />
-    <a href="https://github.com/seanmishra/project-etherite"><strong>Get Started »</strong></a>
+    <a href="#getting-started"><strong>Get Started »</strong></a>
     <br />
     <br />
     <a href="https://github.com/seanmishra/project-etherite/issues">Report Bug</a>
@@ -88,20 +88,19 @@ It is very easy to get started with this template. Just create your own project 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+<!-- This is an example of how to list things you need to use the software and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
-  ```
+  ``` -->
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+<!-- 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
    git clone https://github.com/seanmishra/project-etherite.git
@@ -113,7 +112,7 @@ This is an example of how to list things you need to use the software and how to
 4. Enter your API in `config.js`
    ```js
    const API_KEY = 'ENTER YOUR API';
-   ```
+   ``` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,9 +121,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,10 +132,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+-[x] Add OAuth 2.0 support
+-[x] Add user authentication and endpoint scope validation middlewares
+-[x] Add environment variable support
+-[ ] Add Docker support
+-[ ] Add Kubernetes support
+-[ ] Add tests and CI/CD support
+
 
 See the [open issues](https://github.com/seanmishra/project-etherite/issues) for a full list of proposed features (and known issues).
 
@@ -165,7 +167,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,9 +187,11 @@ Project Link: [https://github.com/seanmishra/project-etherite](https://github.co
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+- [Img Shields](https://shields.io)
+- [Choose an Open Source License](https://choosealicense.com)
+- [GitHub Pages](https://pages.github.com)
+- [Font Awesome](https://fontawesome.com)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
