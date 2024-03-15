@@ -11,7 +11,7 @@ export default ({ config, db }) => {
    */
   api.get('/',
     validateToken(config),
-    validateScope(['read:profiles']),
+    validateScope(config, ['read:profiles']),
     async (req, res) => {
       try {
         const profilesColl = db.collection('profiles')
@@ -28,7 +28,7 @@ export default ({ config, db }) => {
    */
   api.post('/',
     validateToken(config),
-    validateScope(['write:profiles']),
+    validateScope(config, ['write:profiles']),
     async (req, res) => {
       try {
         const profilesColl = db.collection('profiles')

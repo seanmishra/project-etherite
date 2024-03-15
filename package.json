@@ -1,31 +1,31 @@
 {
-  "name": "node-bootstrap-template",
-  "displayName": "Node Bootstrap Template",
+  "name": "project-etherite",
+  "displayName": "Project Etherite",
   "version": "1.0.0",
-  "description": "A starter template to bootstrap node based web services.",
+  "description": "An awesome template to bootstrap your Node.js & MongoDB based RESTful web service project!",
   "main": "dist",
   "scripts": {
     "dev": "NODE_ENV=development nodemon -w src --exec \"babel-node src\"",
     "build": "babel src -s -D -d dist",
     "start": "node dist",
     "prestart": "npm run -s build",
-    "test": "eslint ./src --fix"
+    "lint": "standard",
+    "lint-fix": "standard --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cod3rguy/node-bootstrap-template.git"
+    "url": "git+https://github.com/seanmishra/project-etherite.git"
   },
   "author": "",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cod3rguy/node-bootstrap-template/issues"
+    "url": "https://github.com/seanmishra/project-etherite/issues"
   },
-  "homepage": "https://github.com/cod3rguy/node-bootstrap-template#readme",
+  "homepage": "https://github.com/seanmishra/project-etherite#readme",
   "dependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "body-parser": "^1.13.3",
     "compression": "^1.5.2",
     "core-js": "^3.1.4",
     "cors": "^2.7.1",
@@ -42,12 +42,7 @@
   },
   "devDependencies": {
     "@babel/node": "^7.5.5",
-    "eslint": "^6.1.0",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "nodemon": "^1.9.2"
+    "nodemon": "^1.9.2",
+    "standard": "^17.1.0"
   }
 }
