@@ -1,5 +1,5 @@
 ---
-name: "Support request :email:"
+name: "Support request \U0002709"
 about: Ask for support in using the project
 labels: support
 
