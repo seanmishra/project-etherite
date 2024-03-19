@@ -10,7 +10,7 @@
     "start": "node dist",
     "prestart": "npm run -s build",
     "lint": "standard",
-    "lint-fix": "standard --fix"
+    "lint:fix": "standard --fix"
   },
   "repository": {
     "type": "git",

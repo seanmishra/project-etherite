@@ -25,9 +25,11 @@
     <a href="#getting-started"><strong>Get Started »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/seanmishra/project-etherite/issues">Report Bug</a>
+    <a href="https://github.com/seanmishra/project-etherite/issues/new?assignees=&labels=bug&projects=&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/seanmishra/project-etherite/issues">Request Feature</a>
+    <a href="https://github.com/seanmishra/project-etherite/issues/new?assignees=&labels=bug&projects=&template=feature-request---.md">Request Feature</a>
+    ·
+    <a href="https://github.com/seanmishra/project-etherite/issues/new?assignees=&labels=bug&projects=&template=support-request---.md">Support</a>
   </p>
 </div>
 
@@ -68,8 +70,6 @@ There are many great Node.js & MongoDB based RESTful web service templates avail
 
 It is a simple, yet powerful, RESTful web service template that provides a solid foundation for building Node.js & MongoDB based web services. It also has OAuth 2.0 support built-in which can be optionally enabled for quick user authentication and endpoint scope validation using the provided middlewares.
 
-It is very easy to get started with this template. Just create your own project repository from this template and follow the instructions below to set a few environment variables. That's it! You will be ready to start building your own web service in no time.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -88,35 +88,50 @@ It is very easy to get started with this template. Just create your own project 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
-
-*To be updated...*
+It is very easy to get started with this template. Just [create][create-from-template-url] your own project repository from this template and follow the instructions below to set a few environment variables. That's it! You will be ready to start building your own web service in no time.
 
 ### Prerequisites
 
-*To be updated...*
-<!-- This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ``` -->
+1. This is a no-brainer, but you will obviously need to have Node.js installed on your system. The latest supported version can be found in the `.nvmrc` file, which is also useful if you're using Node Version Manager (NVM). You can learn more about NVM [here][NVM-url].
+
+2. You will also need a running instance of MongoDB. You can either install it locally or use a cloud-based service like [MongoDB Atlas][MongoDB-Atlas-url].
+
+3. This project used [StandardJS][StandardJS-url] for linting and formatting. You can use the following command to lint and format your code.
+
+   ```sh
+   npm run lint
+   ```
+
+   You can also use the following command to fix any linting issues automatically.
+
+   ```sh
+   npm run lint:fix
+   ```
+
+> **VSCode Tip**: If you're using VSCode, you can install the `StandardJS` extension to get linting and formatting support directly in your editor.
+
 
 ### Installation
 
-*To be updated...*
-<!-- 1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/seanmishra/project-etherite.git
-   ```
-3. Install NPM packages
+1. Install dependencies
+
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ``` -->
+
+2. Rename `.env.template` to `.env` and set the environment variables as per your requirements. At the very least, you will need to set the `DB_URI` and `DB_NAME` variables to point to your MongoDB instance. The `PORT` variable is also important if you want to run the service on a specific port. You can also set the `OAUTH2_ENABLED` variable to `true` if you want to enable OAuth 2.0 support. If you do, you will need to set the rest of the OAuth 2.0 related environment variables as well, else you'll get an error when starting the service.
+
+3. Start the service in development mode
+
+   ```sh
+   npm run dev
+   ```
+
+4. To start the service in production mode, you can use the following command which will build the service into an optimized production build in the `dist` directory and then start the service from there.
+
+   ```sh
+   npm start
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,11 +140,24 @@ To get a local copy up and running follow these simple example steps.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-*To be updated...*
+Once your project server is up and running, you can hit the root endpoint to see if it's working. You can use a tool like Postman or Insomnia or simply use `curl` to hit the endpoint.
 
-<!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+```sh
+curl http://localhost:7575/
+```
 
-_For more examples, please refer to the [Documentation](https://example.com)_ -->
+You should see a response like this:
+
+```json
+{
+  "name": "Project Etherite", // Your project name from the package.json file
+  "version": "v1" // Your API version provided in the .env file
+}
+```
+
+From here, you can start building your own endpoints and business logic. You can also add your own middlewares and error handling logic as per your requirements. Examples of CRUD operations and OAuth 2.0 support can be found in the `src/api/profiles.js` and useful OAuth 2.0 related endpoints can be found in the `src/api/auth.js` file.
+
+Good Luck!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,8 +223,9 @@ Project Link: [https://github.com/seanmishra/project-etherite](https://github.co
 
 - [Img Shields](https://shields.io)
 - [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Font Awesome](https://fontawesome.com)
+- [Node Version Manager][NVM-url]
+- [Best README Template](https://github.com/othneildrew/Best-README-Template)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -239,3 +268,7 @@ If you find this project useful, please consider donating to support it as well 
 [MongoDB-url]: https://www.mongodb.com/
 [Dotenv]: https://img.shields.io/badge/Dotenv-gold?style=for-the-badge&logo=dotenv&logoColor=black
 [Dotenv-url]: https://www.npmjs.com/package/dotenv
+[create-from-template-url]: https://github.com/new?template_name=project-etherite&template_owner=seanmishra
+[NVM-url]: https://github.com/nvm-sh/nvm
+[MongoDB-Atlas-url]: https://www.mongodb.com/atlas
+[StandardJS-url]: https://standardjs.com/
