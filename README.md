@@ -150,8 +150,8 @@ You should see a response like this:
 
 ```json
 {
-  "name": "Project Etherite", // Your project name from the package.json file
-  "version": "v1" // Your API version provided in the .env file
+  "name": "Project Etherite",
+  "version": "v1"
 }
 ```
 
