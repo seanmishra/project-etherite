@@ -29,7 +29,7 @@ app.use(
 initializeDb(config)
   .then((db) => {
     // api router
-    app.use(config.apiVersion, api({ config, db }))
+    app.use(`/${config.apiVersion}`, api({ config, db }))
 
     app.use((req, res, next) => {
       res.status(NOT_FOUND).json({
