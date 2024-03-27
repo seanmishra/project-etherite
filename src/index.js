@@ -1,22 +1,26 @@
 import config from './config.js'
+import 'core-js'
 import http from 'http'
 import express from 'express'
 import cors from 'cors'
+import compression from 'compression'
 import morgan from 'morgan'
 import { NOT_FOUND, UNAUTHORIZED, FORBIDDEN } from 'http-status-codes'
-import 'regenerator-runtime/runtime'
 import initializeDb from './db'
 import api from './api'
 
 const app = express()
 app.server = http.createServer(app)
 
+// compression
+app.use(compression())
+
 // logger
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'))
 }
 
-// 3rd party middleware
+// cors
 app.use(cors())
 
 app.use(
