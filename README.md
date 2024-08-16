@@ -143,7 +143,7 @@ It is very easy to get started with this template. Just [create][create-from-tem
 Once your project server is up and running, you can hit the root endpoint to see if it's working. You can use a tool like Postman or Insomnia or simply use `curl` to hit the endpoint.
 
 ```sh
-curl http://localhost:7575/
+curl http://localhost:7575/v1
 ```
 
 You should see a response like this:
