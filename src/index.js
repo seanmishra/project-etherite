@@ -48,6 +48,11 @@ initializeDb(config)
           error: 'Token or scope is invalid'
         })
       }
+      if (err.message === 'Unauthenticated') {
+        res.status(UNAUTHORIZED).json({
+          error: 'Unauthorized request'
+        })
+      }
       if (err.statusCode === 403) {
         res.status(FORBIDDEN).json({
           error: 'Request is forbidden due to insufficient scope'
