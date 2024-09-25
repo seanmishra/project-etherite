@@ -37,7 +37,6 @@ export default {
     backendApi: fetchEnv('CLERK_BACKEND_API', 'https://api.clerk.com/v1'),
     accountPortal: fetchEnv('CLERK_ACCOUNT_PORTAL'),
     publishableKey: fetchEnv('CLERK_PUBLISHABLE_KEY'),
-    secretKey: fetchEnv('CLERK_SECRET_KEY'),
-    redirectURI: fetchEnv('CLERK_REDIRECT_URI')
+    secretKey: fetchEnv('CLERK_SECRET_KEY')
   }
 }
