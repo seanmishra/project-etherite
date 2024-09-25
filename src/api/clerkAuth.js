@@ -70,8 +70,8 @@ export default ({ config }) => {
    * Start testing
    */
   api.get('/', async (req, res) => {
-    const { accountPortal, backendApi, redirectURI, secretKey } = config.clerkAuth
-    if (!accountPortal || !backendApi || !redirectURI || !secretKey) {
+    const { accountPortal, backendApi, secretKey } = config.clerkAuth
+    if (!accountPortal || !backendApi || !secretKey) {
       return res.status(BAD_REQUEST).json({
         message: 'Please provide Clerk config data as environment variables. Refer to /src/config for more info.'
       })
