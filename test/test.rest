@@ -1,5 +1,9 @@
-GET http://localhost:7575/v1
+@apiUrl = "http://localhost:7575/v1"
+@sessionToken = ""
 
-### Protected
-GET http://localhost:7575/v1/clerk-protected
-Authorization: Bearer <token>
+### Testing base project setup
+GET {{apiUrl}}
+
+### Testing clerk-protected endpoint
+GET {{{{apiUrl}}}}/clerk-protected
+Authorization: Bearer {{sessionToken}}
