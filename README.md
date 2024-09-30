@@ -119,7 +119,7 @@ It is very easy to get started with this template. Just [create][create-from-tem
    npm install
    ```
 
-2. Rename `.env.template` to `.env` and set the environment variables as per your requirements. At the very least, you will need to set the `DB_URI` and `DB_NAME` variables to point to your MongoDB instance. The `PORT` variable is also important if you want to run the service on a specific port. You can also set the `OAUTH2_ENABLED` variable to `true` if you want to enable OAuth 2.0 support. If you do, you will need to set the rest of the OAuth 2.0 related environment variables as well, else you'll get an error when starting the service.
+2. Rename `.env.template` to `.env` and set the environment variables as per your requirements. At the very least, you will need to set the `DB_URI` and `DB_NAME` variables to point to your MongoDB instance. The `PORT` variable is also important if you want to run the service on a specific port. You can also set the `OAUTH2_ENABLED` variable to `true` if you want to enable OAuth 2.0 authentication or `CLERK_AUTH` variable to `true` if you want to enable Clerk authentication. If you do, you will need to set the rest of the OAuth 2.0 or Clerk related environment variables as well, else you'll get an error when starting the service.
 
 3. Start the service in development mode
 
@@ -156,6 +156,8 @@ You should see a response like this:
 ```
 
 From here, you can start building your own endpoints and business logic. You can also add your own middlewares and error handling logic as per your requirements. Examples of CRUD operations and OAuth 2.0 support can be found in the `src/api/profiles.js` and useful OAuth 2.0 related endpoints can be found in the `src/api/auth.js` file.
+
+To test the [Clerk][clerk-url] authentication, you will first need to create a Clerk application and set the appropriate environment variables. You can then visit `/v1/clerkauth` endpoint from a browser for further instructions.
 
 Good Luck!
 
@@ -272,3 +274,4 @@ If you find this project useful, please consider donating to support it as well 
 [NVM-url]: https://github.com/nvm-sh/nvm
 [MongoDB-Atlas-url]: https://www.mongodb.com/atlas
 [StandardJS-url]: https://standardjs.com/
+[clerk-url]: https://clerk.dev/

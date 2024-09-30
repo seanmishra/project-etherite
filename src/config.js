@@ -14,6 +14,13 @@ const fetchEnv = (variable, defaultValue, varType = 'string') => {
       return null
     }
   }
+  if (variable.startsWith('CLERK_')) {
+    if (process.env.CLERK_ENABLED === 'true') {
+      throw new Error(`Clerk is enabled but the required variable ${variable} was not found in the environment`)
+    } else {
+      return null
+    }
+  }
   throw new Error(`The required variable ${variable} was not found in the environment`)
 }
 
